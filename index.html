@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,33 +13,105 @@
       color: #fff;
       overflow-x: hidden;
       animation: fadeIn 1s ease;
-    }header {
-  padding: 40px 20px;
-  text-align: center;
-}
+    }
 
-h1 {
-  font-size: 2.5em;
-  margin: 0;
-  animation: slideInDown 1s ease;
-}
+    header {
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-p {
-  font-size: 1.2em;
-  margin-top: 10px;
-  color: #ccc;
-  animation: slideInDown 1.2s ease;
-}
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      animation: slideInDown 1s ease;
+    }
 
-.content {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #2f3542;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  animation: fadeInUp 1.5s ease;
-}
+    p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #ccc;
+      animation: slideInDown 1.2s ease;
+    }
 
-.project {
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #2f3542;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 1.5s ease;
+    }
 
+    .project {
+      margin-bottom: 30px;
+    }
+
+    .project h2 {
+      margin-bottom: 10px;
+      color: #ff6b81;
+    }
+
+    .project p {
+      color: #eee;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ARCID PROJECT</h1>
+    <p>Portofolio | Video Editor | Konten Kreator</p>
+  </header>
+  <div class="content">
+    <div class="project">
+      <h2>🎬 Konten YouTube (30K Subscriber)</h2>
+      <p>Berpengalaman membuat konten FF dan tutorial di platform YouTube dengan total reach jutaan penonton. Menguasai editing di Android/iOS menggunakan aplikasi seperti Kinemaster dan Capcut.</p>
+    </div>
+    <div class="project">
+      <h2>📱 Media Sosial & Digital Branding</h2>
+      <p>Pengalaman mengelola akun, mengatur visual feed, serta membuat konten yang engaging di Instagram & TikTok.</p>
+    </div>
+    <div class="project">
+      <h2>🚀 Projek Selanjutnya</h2>
+      <p>Sedang membangun ulang portofolio profesional untuk merambah dunia kerja berbasis digital dan remote job. Terbuka untuk kolaborasi.</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Arcid Project. All rights reserved.</p>
+  </footer>
+</body>
+</html>
